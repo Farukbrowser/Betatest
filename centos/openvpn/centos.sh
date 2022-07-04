@@ -475,7 +475,7 @@ cd
 chmod +x /etc/crontab
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # Membuat user SSH baru dengan home directory tanpa akses shell
 useradd -m -s /bin/false white-vps
