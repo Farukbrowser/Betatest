@@ -147,7 +147,7 @@ connect = 127.0.0.1:77
 
 END
 
-echo "=================  membuat Sertifikat OpenSSL ======================"
+echo "=================  Install OpenSSL Certificate ======================"
 echo "========================================================="
 #membuat sertifikat
 openssl genrsa -out key.pem 2048
@@ -314,11 +314,11 @@ echo "----------"  | tee -a log-install.txt
 echo "Timezone  : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6      : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Modified by hidessh"  | tee -a log-install.txt
+echo "Modified by Farukbrowser"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
+echo "Installation Logs --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT TIAP JAM 12 MALAM"  | tee -a log-install.txt
+echo "VPS AUTO REBOOT EVERY 12 NIGHT"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
