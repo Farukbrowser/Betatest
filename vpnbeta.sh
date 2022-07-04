@@ -21,7 +21,7 @@ OvpnDownload_Port='85' # Before changing this value, please read this document. 
 
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 apt-get update -y
 apt-get upgrade -y
