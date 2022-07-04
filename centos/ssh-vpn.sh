@@ -315,7 +315,7 @@ chmod +x /etc/crontab
 crontab -l
 
 # set time GMT +7
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # finalisasi
 chown -R nginx:nginx /home/vps/public_html
@@ -333,10 +333,10 @@ chown -R nginx:nginx /home/vps/public_html
 chkconfig crond on
 
 # info
-echo "Information Penggunaan SSH" | tee log-install.txt
+echo "SSH Usage Information" | tee log-install.txt
 echo "===============================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Layanan yang diaktifkan"  | tee -a log-install.txt
+echo "Activated Services"  | tee -a log-install.txt
 echo "--------------------------------------"  | tee -a log-install.txt
 echo "Client Config  : http://$MYIP:81/1194-client.ovpn)"  | tee -a log-install.txt
 echo "Port OpenSSH   : 22, 143"  | tee -a log-install.txt
@@ -346,7 +346,7 @@ echo "badvpn         : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "Webmin         : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "vnstat         : http://$MYIP:81/vnstat/"  | tee -a log-install.txt
 echo "MRTG           : http://$MYIP:81/mrtg/"  | tee -a log-install.txt
-echo "Timezone       : Africa/Nigeria"  | tee -a log-install.txt
+echo "Timezone       : Asia/Jakarta"  | tee -a log-install.txt
 echo "Fail2Ban       : [on]"  | tee -a log-install.txt
 echo "IPv6           : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -361,7 +361,7 @@ echo "mtr"  | tee -a log-install.txt
 echo "nethogs"  | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 
-echo "Account Default (Untuk SSH dan VPN)"  | tee -a log-install.txt
+echo "Default Account (For SSH and VPN)"  | tee -a log-install.txt
 echo "---------------"  | tee -a log-install.txt
 echo "User     : white-vps"  | tee -a log-install.txt
 echo "Password : $PASS"  | tee -a log-install.txt
@@ -369,19 +369,18 @@ echo "" | tee -a log-install.txt
 
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-
-echo "speedtest         : untuk cek speed vps"  | tee -a log-install.txt
-echo "mem               : untuk melihat pemakaian ram"  | tee -a log-install.txt
-echo "bench             : untuk melihat performa vps" | tee -a log-install.txt
-echo "userlogin         : untuk melihat user yang sedang login"  | tee -a log-install.txt
-echo "loginuser         : untuk melihat user yang sedang login"  | tee -a log-install.txt
-echo "trial             : untuk membuat akun trial selama 1 hari"  | tee -a log-install.txt
-echo "usernew           : untuk membuat akun baru"  | tee -a log-install.txt
-echo "userexpire        : untuk Cek user expired"  | tee -a log-install.txt
-echo "renew             : untuk memperpanjang masa aktif akun"  | tee -a log-install.txt
-echo "userlist          : untuk melihat daftar akun beserta masa aktifnya"  | tee -a log-install.txt
-echo "jurus69           : untuk melakukan reboot service vps"  | tee -a log-install.txt
-echo "delete            : untuk Hapus Semua User Expired"  | tee -a log-install.txt
+echo "speedtest : to check vps speed" | tee -a log-install.txt
+echo "mem : to see ram usage" | tee -a log-install.txt
+echo "bench : to see vps performance" | tee -a log-install.txt
+echo "userlogin : to see currently logged in users" | tee -a log-install.txt
+echo "loginuser : to see currently logged in user" | tee -a log-install.txt
+echo "trial : to create a trial account for 1 day" | tee -a log-install.txt
+echo "usernew : to create a new account" | tee -a log-install.txt
+echo "userexpire : to check user expired" | tee -a log-install.txt
+echo "renew : to extend the active period of the account" | tee -a log-install.txt
+echo "userlist : to see a list of accounts and their active period" | tee -a log-install.txt
+echo "jurus69 : to reboot the vps service" | tee -a log-install.txt
+echo "delete : to Delete All Expired Users" | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
 
 
