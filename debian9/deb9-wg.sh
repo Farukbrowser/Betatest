@@ -25,7 +25,7 @@ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 # set time GMT +7 jakarta
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -286,14 +286,14 @@ echo ""  | tee -a log-install.txt
 
 echo "Fitur lain"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
-echo "Timezone  : Africa/Nigeria (GMT +7)"  | tee -a log-install.txt
+echo "Timezone  : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6      : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Modified by hidessh"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "VPS AUTO REBOOT TIAP JAM 12 MALAM"  | tee -a log-install.txt
+echo "VPS AUTO REBOOT EVERY 12 NIGHT"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
