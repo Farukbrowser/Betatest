@@ -25,7 +25,7 @@ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 # set time GMT +7 jakarta
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -295,23 +295,23 @@ echo "nginx     : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-echo "menu      : Menampilkan daftar perintah yang tersedia"  | tee -a log-install.txt
-echo "usernew   : Membuat Akun SSH"  | tee -a log-install.txt
-echo "trial     : Membuat Akun Trial"  | tee -a log-install.txt
-echo "hapus     : Menghapus Akun SSH"  | tee -a log-install.txt
-echo "cek       : Cek User Login"  | tee -a log-install.txt
-echo "member    : Cek Member SSH"  | tee -a log-install.txt
-echo "jurus69   : Restart Service dropbear, squid3, stunnel4, vpn, ssh)"  | tee -a log-install.txt
-echo "reboot    : Reboot VPS"  | tee -a log-install.txt
-echo "speedtest : Speedtest VPS"  | tee -a log-install.txt
-echo "info      : Menampilkan Information Sistem"  | tee -a log-install.txt
-echo "delete    : auto Delete user expired"  | tee -a log-install.txt
-echo "about     : Information tentang script auto install"  | tee -a log-install.txt
+echo "menu : Displays a list of available commands" | tee -a log-install.txt
+echo "usernew : Create SSH Account" | tee -a log-install.txt
+echo "trial : Create Trial Account" | tee -a log-install.txt
+echo "delete : Deleting SSH Account" | tee -a log-install.txt
+echo "check : Check User Login" | tee -a log-install.txt
+echo "member : Check Member SSH" | tee -a log-install.txt
+echo "step69 : Restart Service dropbear, squid3, stunnel4, vpn, ssh)" | tee -a log-install.txt
+echo "reboot : Reboot VPS" | tee -a log-install.txt
+echo "speedtest : Speedtest VPS" | tee -a log-install.txt
+echo "info : Displays System Information" | tee -a log-install.txt
+echo "delete : auto Delete user expired" | tee -a log-install.txt
+echo "about : Information about auto install script"| tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 
 echo "Fitur lain"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
-echo "Timezone  : Africa/Nigeria (GMT +7)"  | tee -a log-install.txt
+echo "Timezone  : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6      : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Modified by hidessh"  | tee -a log-install.txt
