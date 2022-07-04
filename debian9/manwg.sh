@@ -2,7 +2,7 @@
 #created : HideSSH
 
 # set time GMT +7 jakarta
-ln -fs /usr/share/zoneinfo/Africa/Nigeria /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 #rertart server 00:00
 cd
