@@ -148,7 +148,7 @@ connect = 127.0.0.1:77
 
 END
 
-echo "=================  membuat Sertifikat OpenSSL ======================"
+echo "=================  Install OpenSSL Certificate ======================"
 echo "========================================================="
 #membuat sertifikat
 openssl genrsa -out key.pem 2048
